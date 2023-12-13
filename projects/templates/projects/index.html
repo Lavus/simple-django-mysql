@@ -1,0 +1,21 @@
+<!-- projects/templates/projects/index.html -->
+
+{% extends "base.html" %}
+
+{% block page_content %}
+  <h1>Projetos - Bancos de Dados</h1>
+  <div class="row">
+    {% for database in databases %}
+      <div class="col-md-4">
+        <div class="card mb-2">
+          <div class="card-body">
+            <h2 class="card-title">{{ database }}</h2>
+            <a href="{% url 'project_index' source=database %}" class="btn btn-primary">
+              Ver projetos
+            </a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
