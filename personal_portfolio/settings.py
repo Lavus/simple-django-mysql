@@ -23,10 +23,8 @@ MEDIA_URL = 'media/'
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-try:
-    SECRET_KEY = os.environ['SECRET_KEY']
-except KeyError as e:
-    raise RuntimeError('Could not find a SECRET_KEY in environment') from e
+SECRET_KEY = 'django-insecure-hx$v*8p942!le@k4*-x#aan1$lbh#kuysj89sternd$*#%guw&'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
