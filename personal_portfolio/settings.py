@@ -108,7 +108,7 @@ DATABASES = {
         'HOST': 'EndPointOfOtherRDS',
         'PORT': '3306'
     }
-}
+This branch is 2 commits ahead of, 5 commits behind master.}
 
 
 # Password validation
@@ -145,8 +145,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = '/home/ec2-user/rp-portfolio/static/'
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
